@@ -3062,14 +3062,6 @@ td.mat-footer-cell {
 
 /*Custom styles*/
 
-.data-container {
-    padding: 5%;
-}
-
-.action-container {
-    padding-bottom: 10px;
-}
-
 .action-container:not(.one-button) .mat-raised-button {
     margin-left: 10px!important;
 }
@@ -3160,4 +3152,19 @@ td.mat-footer-cell {
 
 .full-width {
     width: 100%;
+}
+
+
+/*Custom Styles Aijo*/
+
+table {
+    width: 100%;
+}
+
+.data-container {
+    padding: 5%;
+}
+
+.action-container {
+    padding-bottom: 10px;
 }
