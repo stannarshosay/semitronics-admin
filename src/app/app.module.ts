@@ -35,13 +35,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DealersComponent } from './components/dealers/dealers.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { StaffComponent } from './components/staff/staff.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    DealersComponent
+    DealersComponent,
+    ClientsComponent,
+    StaffComponent,
+   
+   
+    
   ],
   imports: [
     BrowserModule,
