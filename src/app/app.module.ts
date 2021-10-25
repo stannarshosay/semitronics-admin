@@ -37,6 +37,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DealersComponent } from './components/dealers/dealers.component';
 import { ClientsComponent } from './components/clients/clients.component';
 import { StaffComponent } from './components/staff/staff.component';
+import { CountryComponent } from './components/country/country.component';
+import { AddCountryComponent } from './dialogs/add-country/add-country.component';
 
 
 
@@ -49,6 +51,8 @@ import { StaffComponent } from './components/staff/staff.component';
     DealersComponent,
     ClientsComponent,
     StaffComponent,
+    CountryComponent,
+    AddCountryComponent,
    
    
     

@@ -7,6 +7,7 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { LoginGuard } from './guards/login.guard';
+import { CountryComponent } from './components/country/country.component';
 
 const routes: Routes = [
   {path:"",redirectTo:"dashboard",pathMatch:"full"},
@@ -14,10 +15,8 @@ const routes: Routes = [
   {path:"dashboard",component:DashboardComponent,canActivate:[AuthGuard]},
   {path:"dealers",component:DealersComponent,canActivate:[AuthGuard]},
   {path:"clients",component:ClientsComponent,canActivate:[AuthGuard]},
-  {path:"staff",component:StaffComponent,canActivate:[AuthGuard]}
-
-
-
+  {path:"staff",component:StaffComponent,canActivate:[AuthGuard]},
+  {path:"country",component:CountryComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({
