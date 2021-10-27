@@ -39,6 +39,15 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { StaffComponent } from './components/staff/staff.component';
 import { CountryComponent } from './components/country/country.component';
 import { AddCountryComponent } from './dialogs/add-country/add-country.component';
+import { UpdateCountryComponent } from './dialogs/update-country/update-country.component';
+import { CurrencyComponent } from './components/currency/currency.component';
+import { UpdateCurrencyComponent } from './dialogs/update-currency/update-currency.component';
+import { AddCurrencyComponent } from './dialogs/add-currency/add-currency.component';
+import { SafehtmlPipe } from './pipes/safehtml.pipe';
+import { StateComponent } from './components/state/state.component';
+import { AddStateComponent } from './dialogs/add-state/add-state.component';
+import { UpdateStateComponent } from './dialogs/update-state/update-state.component';
+
 
 
 
@@ -53,6 +62,15 @@ import { AddCountryComponent } from './dialogs/add-country/add-country.component
     StaffComponent,
     CountryComponent,
     AddCountryComponent,
+    UpdateCountryComponent,
+    CurrencyComponent,
+    UpdateCurrencyComponent,
+    AddCurrencyComponent,
+    SafehtmlPipe,
+    StateComponent,
+    AddStateComponent,
+    UpdateStateComponent,
+    
    
    
     

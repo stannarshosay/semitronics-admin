@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddCountryComponent } from 'src/app/dialogs/add-country/add-country.component';
+import { UpdateCountryComponent } from 'src/app/dialogs/update-country/update-country.component';
+
 
 @Component({
   selector: 'app-country',
@@ -25,6 +27,14 @@ export class CountryComponent implements OnInit {
   ngOnInit(): void {}
   openAddCountryDialog(){
     const dialogRef = this.dialog.open(AddCountryComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openUpdateCountryDialog(){
+    const dialogRef = this.dialog.open(UpdateCountryComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

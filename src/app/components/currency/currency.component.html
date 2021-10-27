@@ -1,17 +1,17 @@
 <div class="data-container">
-    <h3><strong> Country </strong></h3>
+    <h3><strong> Currency </strong></h3>
 
     <div class="action-container one-button" fxLayout="row" fxLayoutAlign="space-between center">
         <div>
             <mat-form-field appearance="fill">
-                <mat-label>Search By Country Name</mat-label>
+                <mat-label>Search By Currency Name</mat-label>
                 <input matInput>
             </mat-form-field>
             <button mat-icon-button color="primary">
                 <mat-icon>search</mat-icon>
             </button>
         </div>
-        <button mat-raised-button color="primary" (click)="openAddCountryDialog()"><mat-icon>add</mat-icon> Add Country</button>
+        <button mat-raised-button color="primary" (click)="openAddCurrencyDialog()"><mat-icon>add</mat-icon> Add Currency</button>
     </div>
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="position">
@@ -29,15 +29,15 @@
             <td mat-cell *matCellDef="let element"> {{element.name}} </td>
         </ng-container>
 
-        <ng-container matColumnDef="code">
-            <th mat-header-cell *matHeaderCellDef> Country Code </th>
-            <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+        <ng-container matColumnDef="currency">
+            <th mat-header-cell *matHeaderCellDef>  Currency </th>
+            <td mat-cell *matCellDef="let element"> <span [innerHtml]="element.currency | safehtml"> </span> </td>
         </ng-container>
 
         <ng-container matColumnDef="update">
             <th mat-header-cell *matHeaderCellDef> Update </th>
             <td mat-cell *matCellDef="let element">
-                <button mat-icon-button color="primary" (click)="openUpdateCountryDialog()">
+                <button mat-icon-button color="primary" (click)="openUpdateCurrencyDialog()">
                     <mat-icon>edit</mat-icon>
                 </button>
             </td>
