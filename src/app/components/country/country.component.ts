@@ -10,7 +10,7 @@ import { UpdateCountryComponent } from 'src/app/dialogs/update-country/update-co
   styleUrls: ['./country.component.css']
 })
 export class CountryComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'countryId', 'name', 'code','update','remove'];
+  displayedColumns: string[] = ['position', 'countryId', 'name', 'code','update','remove','viewState'];
   dataSource:any[] = [
     {position: 1, countryId: 'C001', name: 'America', code: '+91'},
     {position: 2, countryId: 'C002', name: 'India', code: '+91'},

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { AddStateComponent } from 'src/app/dialogs/add-state/add-state.component';
 import { UpdateStateComponent } from 'src/app/dialogs/update-state/update-state.component';
 
@@ -10,6 +11,8 @@ import { UpdateStateComponent } from 'src/app/dialogs/update-state/update-state.
 })
 export class StateComponent implements OnInit {
 
+  countryId:any = null;
+  countryName:any = null;
   displayedColumns: string[] = ['position', 'stateId', 'name', 'code','update','remove'];
   dataSource:any[] = [
     {position: 1, stateId: 'C001', name: 'America', code: '+91'},
@@ -22,9 +25,14 @@ export class StateComponent implements OnInit {
   ];
 
   constructor(
-    public dialog: MatDialog
-
-  ) { }
+    public dialog: MatDialog,
+    private route: ActivatedRoute
+  ) {
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      this.countryId = params.get('countryId');
+      this.countryName = params.get('countryName');
+    });
+   }
 
   ngOnInit(): void {}
 

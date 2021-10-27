@@ -20,9 +20,7 @@ const routes: Routes = [
   {path:"staff",component:StaffComponent,canActivate:[AuthGuard]},
   {path:"country",component:CountryComponent,canActivate:[AuthGuard]},
   {path:"currency",component:CurrencyComponent,canActivate:[AuthGuard]},
-  {path:"state",component:StateComponent,canActivate:[AuthGuard]}
-
-
+  {path:"state/:countryId/:countryName",component:StateComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({
