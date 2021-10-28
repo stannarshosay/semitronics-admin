@@ -10,6 +10,7 @@ import { LoginGuard } from './guards/login.guard';
 import { CountryComponent } from './components/country/country.component';
 import { CurrencyComponent } from './components/currency/currency.component';
 import { StateComponent } from './components/state/state.component';
+import { DistrictComponent } from './components/district/district.component';
 
 const routes: Routes = [
   {path:"",redirectTo:"dashboard",pathMatch:"full"},
@@ -20,7 +21,9 @@ const routes: Routes = [
   {path:"staff",component:StaffComponent,canActivate:[AuthGuard]},
   {path:"country",component:CountryComponent,canActivate:[AuthGuard]},
   {path:"currency",component:CurrencyComponent,canActivate:[AuthGuard]},
-  {path:"state/:countryId/:countryName",component:StateComponent,canActivate:[AuthGuard]}
+  {path:"state/:countryId/:countryName",component:StateComponent,canActivate:[AuthGuard]},
+  {path:"district",component:DistrictComponent,canActivate:[AuthGuard]}
+
 ];
 
 @NgModule({

@@ -47,6 +47,9 @@ import { SafehtmlPipe } from './pipes/safehtml.pipe';
 import { StateComponent } from './components/state/state.component';
 import { AddStateComponent } from './dialogs/add-state/add-state.component';
 import { UpdateStateComponent } from './dialogs/update-state/update-state.component';
+import { DistrictComponent } from './components/district/district.component';
+import { AddDistrictComponent } from './dialogs/add-district/add-district.component';
+import { UpdateDistrictComponent } from './dialogs/update-district/update-district.component';
 
 
 
@@ -70,6 +73,9 @@ import { UpdateStateComponent } from './dialogs/update-state/update-state.compon
     StateComponent,
     AddStateComponent,
     UpdateStateComponent,
+    DistrictComponent,
+    AddDistrictComponent,
+    UpdateDistrictComponent,
     
    
    

@@ -13,15 +13,15 @@ export class StateComponent implements OnInit {
 
   countryId:any = null;
   countryName:any = null;
-  displayedColumns: string[] = ['position', 'stateId', 'name', 'code','update','remove'];
+  displayedColumns: string[] = ['position', 'stateId', 'name', 'code','update','remove','viewDistrict'];
   dataSource:any[] = [
-    {position: 1, stateId: 'C001', name: 'America', code: '+91'},
-    {position: 2, stateId: 'C002', name: 'India', code: '+91'},
-    {position: 3, stateId: 'C003', name: 'Japan ', code: '+91'},
-    {position: 4, stateId: 'C004', name: 'Argentina', code: '+91'},
-    {position: 5, stateId: 'C005', name: 'China', code: '+91'},
-    {position: 6, stateId: 'C006', name: 'Pakistan ', code: '+91'},
-    {position: 7, stateId: 'C007', name: 'Germany', code: '+91'} 
+    {position: 1, stateId: 'IND001', name: 'Kerala', code: '+91'},
+    {position: 2, stateId: 'IND002', name: 'Goa', code: '+91'},
+    {position: 3, stateId: 'IND003', name: 'Karnadaka ', code: '+91'},
+    {position: 4, stateId: 'IND004', name: 'Tamil Nadu', code: '+91'},
+    {position: 5, stateId: 'IND005', name: 'Andhra pradesh', code: '+91'},
+    {position: 6, stateId: 'IND006', name: 'Maharashtra ', code: '+91'},
+    {position: 7, stateId: 'IND007', name: 'Haryana', code: '+91'} 
   ];
 
   constructor(
