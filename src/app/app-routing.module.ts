@@ -23,7 +23,6 @@ const routes: Routes = [
   {path:"currency",component:CurrencyComponent,canActivate:[AuthGuard]},
   {path:"state/:countryId/:countryName",component:StateComponent,canActivate:[AuthGuard]},
   {path:"district",component:DistrictComponent,canActivate:[AuthGuard]}
-
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AddDistrictComponent } from 'src/app/dialogs/add-district/add-district.component';
 import { UpdateDistrictComponent } from 'src/app/dialogs/update-district/update-district.component';
+import { RoutePathService } from 'src/app/services/route-path.service';
 
 @Component({
   selector: 'app-district',
@@ -24,9 +25,10 @@ export class DistrictComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
-    private sanitized: DomSanitizer
-
-  ) { }
+    private routePathService:RoutePathService
+  ) { 
+    this.routePathService.routePath = "District";
+  }
 
   ngOnInit(): void {}
   openAddDistrictDialog(){

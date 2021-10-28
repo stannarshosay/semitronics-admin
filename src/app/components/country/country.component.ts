@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddCountryComponent } from 'src/app/dialogs/add-country/add-country.component';
 import { UpdateCountryComponent } from 'src/app/dialogs/update-country/update-country.component';
+import { RoutePathService } from 'src/app/services/route-path.service';
 
 
 @Component({
@@ -21,8 +22,11 @@ export class CountryComponent implements OnInit {
     {position: 7, countryId: 'C007', name: 'Germany', code: '+91'} 
   ];
   constructor(
-    public dialog: MatDialog
-  ) {}
+    public dialog: MatDialog,
+    public routePathService:RoutePathService
+  ) {
+    this.routePathService.routePath = "Country";
+  }
 
   ngOnInit(): void {}
   openAddCountryDialog(){

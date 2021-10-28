@@ -1,5 +1,5 @@
 <mat-toolbar color="primary" class="header-toolbar" fxLayout="row" fxLayoutAlign="space-between center">
-    <span>Semitronics Admin</span>
+    <span>Semitronics Admin &#10148; {{routePathService.routePath}}</span>
     <div *ngIf="!isFullPage">
         <button mat-raised-button>Change password</button>
         <button mat-icon-button matTooltip="notifications" color="accent"><mat-icon [matBadge]="4" matBadgeColor="warn">notifications</mat-icon></button>
@@ -14,8 +14,8 @@
                 <a mat-list-item routerLink="/dealers" routerLinkActive="active-link">Dealers</a>
                 <a mat-list-item routerLink="/clients" routerLinkActive="active-link">Clients</a>
                 <a mat-list-item routerLink="/staff" routerLinkActive="active-link">Staff</a>
-                <a mat-list-item routerLink="/currency" routerLinkActive="active-link">Currency</a>
-                <a mat-list-item routerLink="/country" routerLinkActive="active-link">Country</a>
+                <a mat-list-item routerLink="/currency" routerLinkActive="active-link">Manage Currency</a>
+                <a mat-list-item routerLink="/country" routerLinkActive="active-link">Manage Location</a>
                 <a mat-list-item routerLink="/district" routerLinkActive="active-link">District</a>
                 <a mat-list-item routerLink="/pincode" routerLinkActive="active-link">Pincode</a>
                 <mat-expansion-panel class="mat-elevation-z0">

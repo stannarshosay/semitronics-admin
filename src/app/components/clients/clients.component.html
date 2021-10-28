@@ -1,5 +1,3 @@
-
-
 <div class="data-container">
     <!-- <mat-form-field appearance="fill">
         <mat-label>Search By Name</mat-label>
@@ -9,14 +7,7 @@
         <mat-icon>search</mat-icon>
     </button>  -->
 
-    <h3><b> Clients Details </b></h3>
-
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-        <!--- Note that these columns can be defined in any order.
-              The actual rendered columns are set as a property on the row definition" -->
-
-        <!-- Position Column -->
         <ng-container matColumnDef="position">
             <th mat-header-cell *matHeaderCellDef> No. </th>
             <td mat-cell *matCellDef="let element"> {{element.position}} </td>

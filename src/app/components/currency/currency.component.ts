@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AddCurrencyComponent } from 'src/app/dialogs/add-currency/add-currency.component';
 import { UpdateCurrencyComponent } from 'src/app/dialogs/update-currency/update-currency.component';
+import { RoutePathService } from 'src/app/services/route-path.service';
 
 
 @Component({
@@ -12,21 +13,23 @@ import { UpdateCurrencyComponent } from 'src/app/dialogs/update-currency/update-
 })
 export class CurrencyComponent implements OnInit {
    
-  displayedColumns: string[] = ['position', 'countryId', 'name', 'currency','update','remove'];
+  displayedColumns: string[] = ['position', 'currencyId', 'name', 'symbol','code','update','remove'];
   dataSource:any[] = [
-    {position: 1, countryId: 'C001', name: 'America', currency: '&#8377;'},
-    {position: 2, countryId: 'C002', name: 'India', currency: '&#36;'},
-    {position: 3, countryId: 'C003', name: 'Japan ', currency: ''},
-    {position: 4, countryId: 'C004', name: 'Argentina', currency: 'rupa'},
-    {position: 5, countryId: 'C005', name: 'China', currency: 'rupa'},
-    {position: 6, countryId: 'C006', name: 'Pakistan ', currency: 'rupa'},
-    {position: 7, countryId: 'C007', name: 'Germany', currency: 'rupa'} 
+    {position: 1, currencyId: 'C001', name: 'Ruppes', symbol: '&#8377;',code:"code1"},
+    {position: 2, currencyId: 'C002', name: 'Yen', symbol: '&#36;',code:"code1"},
+    {position: 3, currencyId: 'C003', name: 'Dollars ', symbol: '&#36;',code:"code1"},
+    {position: 4, currencyId: 'C004', name: 'Euro', symbol: '&#36;',code:"code1"},
+    {position: 5, currencyId: 'C005', name: 'Dollars', symbol: '&#36;',code:"code1"},
+    {position: 6, currencyId: 'C006', name: 'Ruppes ', symbol: '&#36;',code:"code1"},
+    {position: 7, currencyId: 'C007', name: 'Ruppes', symbol: '&#36;',code:"code1"} 
   ];
 
   constructor(
     public dialog: MatDialog,
-    private sanitized: DomSanitizer
-  ) { }
+    private routePathService:RoutePathService
+  ) { 
+    this.routePathService.routePath = "Currency";
+  }
   
   ngOnInit(): void {}
 

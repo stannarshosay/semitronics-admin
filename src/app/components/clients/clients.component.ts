@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutePathService } from 'src/app/services/route-path.service';
 
 @Component({
   selector: 'app-clients',
@@ -17,7 +18,11 @@ export class ClientsComponent implements OnInit {
   
   ];
 
-  constructor() { }
+  constructor(
+    public routePathService:RoutePathService
+  ){
+    this.routePathService.routePath = "Clients";
+  } 
 
   ngOnInit(): void {
   }

@@ -1,6 +1,4 @@
 <div class="data-container">
-    <h3><strong> Currency </strong></h3>
-
     <div class="action-container one-button" fxLayout="row" fxLayoutAlign="space-between center">
         <div>
             <mat-form-field appearance="fill">
@@ -19,19 +17,24 @@
             <td mat-cell *matCellDef="let element"> {{element.position}} </td>
         </ng-container>
 
-        <ng-container matColumnDef="countryId">
-            <th mat-header-cell *matHeaderCellDef> Country ID </th>
-            <td mat-cell *matCellDef="let element"> {{element.countryId}} </td>
+        <ng-container matColumnDef="currencyId">
+            <th mat-header-cell *matHeaderCellDef> Currency ID </th>
+            <td mat-cell *matCellDef="let element"> {{element.currencyId}} </td>
         </ng-container>
 
         <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef> Country Name </th>
+            <th mat-header-cell *matHeaderCellDef> Currency Name </th>
             <td mat-cell *matCellDef="let element"> {{element.name}} </td>
         </ng-container>
 
-        <ng-container matColumnDef="currency">
-            <th mat-header-cell *matHeaderCellDef>  Currency </th>
-            <td mat-cell *matCellDef="let element"> <span [innerHtml]="element.currency | safehtml"> </span> </td>
+        <ng-container matColumnDef="code">
+            <th mat-header-cell *matHeaderCellDef> Currency Code </th>
+            <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef> Currency Symbol </th>
+            <td mat-cell *matCellDef="let element"> <span [innerHtml]="element.symbol | safehtml"> </span> </td>
         </ng-container>
 
         <ng-container matColumnDef="update">

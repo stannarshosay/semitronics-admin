@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutePathService } from 'src/app/services/route-path.service';
 
 @Component({
   selector: 'app-staff',
@@ -16,11 +17,14 @@ export class StaffComponent implements OnInit {
     {position: 5, staffid: 'SJM00147', name: 'Anil V', designation: 'Accountant',status:true,remove:true},
     {position: 6, staffid: 'SJM00104', name: 'Bindu Sunny ', designation: 'Office',status:true,remove:true},
     {position: 7, staffid: 'SJM00473', name: 'Seema baala', designation: 'office',status:true,remove:true},
-    {position: 8, staffid: 'SJM00168', name: 'Arun', designation: 'Networking',status:true,remove:true},
- 
+    {position: 8, staffid: 'SJM00168', name: 'Arun', designation: 'Networking',status:true,remove:true} 
   ];
 
-  constructor() { }
+  constructor(
+    private routePathService:RoutePathService
+  ) { 
+    this.routePathService.routePath = "Staff";
+  }
 
   ngOnInit(): void {
   }

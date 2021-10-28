@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { AddStateComponent } from 'src/app/dialogs/add-state/add-state.component';
 import { UpdateStateComponent } from 'src/app/dialogs/update-state/update-state.component';
+import { RoutePathService } from 'src/app/services/route-path.service';
 
 @Component({
   selector: 'app-state',
@@ -26,8 +27,10 @@ export class StateComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private routePathService:RoutePathService
   ) {
+    this.routePathService.routePath = "State";
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.countryId = params.get('countryId');
       this.countryName = params.get('countryName');

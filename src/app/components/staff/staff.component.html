@@ -1,5 +1,3 @@
-
-
 <div class="data-container">
     <!-- <mat-form-field appearance="fill">
         <mat-label>Search By Name</mat-label>
@@ -8,9 +6,6 @@
     <button mat-icon-button color="primary">
         <mat-icon>search</mat-icon>
     </button>  -->
-
-    <h3><b> Staff Details </b></h3>
-
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
         <!--- Note that these columns can be defined in any order.
@@ -21,22 +16,22 @@
             <th mat-header-cell *matHeaderCellDef> No. </th>
             <td mat-cell *matCellDef="let element"> {{element.position}} </td>
         </ng-container>
-        
 
-         <!-- Weight Column -->
-         <ng-container matColumnDef="staffid">
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="staffid">
             <th mat-header-cell *matHeaderCellDef> Staff ID </th>
             <td mat-cell *matCellDef="let element"> {{element.staffid}} </td>
         </ng-container>
 
-        
+
         <!-- Name Column -->
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef> Name </th>
             <td mat-cell *matCellDef="let element"> {{element.name}} </td>
         </ng-container>
 
-       
+
 
         <!-- Symbol Column -->
         <ng-container matColumnDef="designation">
