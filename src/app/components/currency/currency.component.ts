@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog'; 
-import { DomSanitizer } from '@angular/platform-browser';
 import { AddCurrencyComponent } from 'src/app/dialogs/add-currency/add-currency.component';
 import { UpdateCurrencyComponent } from 'src/app/dialogs/update-currency/update-currency.component';
 import { RoutePathService } from 'src/app/services/route-path.service';
