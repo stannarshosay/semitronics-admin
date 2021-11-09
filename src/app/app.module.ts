@@ -124,6 +124,27 @@ import { AddBrandGroupComponent } from './dialogs/add-brand-group/add-brand-grou
 import { AddBrandCategoryComponent } from './dialogs/add-brand-category/add-brand-category.component';
 import { UpdateBrandCategoryComponent } from './dialogs/update-brand-category/update-brand-category.component';
 import { UpdateBrandGroupComponent } from './dialogs/update-brand-group/update-brand-group.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductCategoryComponent } from './components/product-category/product-category.component';
+import { ProductGroupComponent } from './components/product-group/product-group.component';
+import { AddProductComponent } from './dialogs/add-product/add-product.component';
+import { UpdateProductComponent } from './dialogs/update-product/update-product.component';
+import { AddProductCategoryComponent } from './dialogs/add-product-category/add-product-category.component';
+import { UpdateProductCategoryComponent } from './dialogs/update-product-category/update-product-category.component';
+import { AddProductGroupComponent } from './dialogs/add-product-group/add-product-group.component';
+import { UpdateProductGroupComponent } from './dialogs/update-product-group/update-product-group.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ServiceGroupComponent } from './components/service-group/service-group.component';
+import { ServiceCategoryComponent } from './components/service-category/service-category.component';
+import { AddServiceComponent } from './dialogs/add-service/add-service.component';
+import { UpdateServiceComponent } from './dialogs/update-service/update-service.component';
+import { AddServiceGroupComponent } from './dialogs/add-service-group/add-service-group.component';
+import { UpdateServiceGroupComponent } from './dialogs/update-service-group/update-service-group.component';
+import { AddServiceCategoryComponent } from './dialogs/add-service-category/add-service-category.component';
+import { UpdateServiceCategoryComponent } from './dialogs/update-service-category/update-service-category.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { AddOrdersComponent } from './dialogs/add-orders/add-orders.component';
+import { UpdateOrdersComponent } from './dialogs/update-orders/update-orders.component';
 
 
 
@@ -226,6 +247,27 @@ import { UpdateBrandGroupComponent } from './dialogs/update-brand-group/update-b
     AddBrandCategoryComponent,
     UpdateBrandCategoryComponent,
     UpdateBrandGroupComponent,
+    ProductComponent,
+    ProductCategoryComponent,
+    ProductGroupComponent,
+    AddProductComponent,
+    UpdateProductComponent,
+    AddProductCategoryComponent,
+    UpdateProductCategoryComponent,
+    AddProductGroupComponent,
+    UpdateProductGroupComponent,
+    ServiceComponent,
+    ServiceGroupComponent,
+    ServiceCategoryComponent,
+    AddServiceComponent,
+    UpdateServiceComponent,
+    AddServiceGroupComponent,
+    UpdateServiceGroupComponent,
+    AddServiceCategoryComponent,
+    UpdateServiceCategoryComponent,
+    OrdersComponent,
+    AddOrdersComponent,
+    UpdateOrdersComponent,
   
     
   ],

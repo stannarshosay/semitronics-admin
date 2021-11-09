@@ -36,6 +36,13 @@ import { SellerGroupComponent } from './components/seller-group/seller-group.com
 import { BrandComponent } from './components/brand/brand.component';
 import { BrandGroupComponent } from './components/brand-group/brand-group.component';
 import { BrandCategoryComponent } from './components/brand-category/brand-category.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductCategoryComponent } from './components/product-category/product-category.component';
+import { ProductGroupComponent } from './components/product-group/product-group.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ServiceCategoryComponent } from './components/service-category/service-category.component';
+import { ServiceGroupComponent } from './components/service-group/service-group.component';
+import { OrdersComponent } from './components/orders/orders.component';
 
 
 
@@ -66,6 +73,16 @@ const routes: Routes = [
   {path:"seller-group",component:SellerGroupComponent,canActivate:[AuthGuard]},
   {path:"brand",component:BrandComponent,canActivate:[AuthGuard]},
   {path:"brand-group",component:BrandGroupComponent,canActivate:[AuthGuard]},
+  {path:"product",component:ProductComponent,canActivate:[AuthGuard]},
+  {path:"product-group",component:ProductGroupComponent,canActivate:[AuthGuard]},
+  {path:"service",component:ServiceComponent,canActivate:[AuthGuard]},
+  {path:"service-group",component:ServiceGroupComponent,canActivate:[AuthGuard]},
+  {path:"orders",component:OrdersComponent,canActivate:[AuthGuard]},
+
+
+
+
+
 
 
 
@@ -79,6 +96,10 @@ const routes: Routes = [
   {path:"seller-category/:groupId/:groupName",component:SellerCategoryComponent,canActivate:[AuthGuard]},
   {path:"promotion-category/:groupId/:groupName",component:PromotionCategoryComponent,canActivate:[AuthGuard]},
   {path:"brand-category/:groupId/:groupName",component:BrandCategoryComponent,canActivate:[AuthGuard]},
+  {path:"product-category/:groupId/:groupName",component:ProductCategoryComponent,canActivate:[AuthGuard]},
+  {path:"service-category/:groupId/:groupName",component:ServiceCategoryComponent,canActivate:[AuthGuard]},
+
+
 
   
   {path:"tax",component:TaxComponent,canActivate:[AuthGuard]},
