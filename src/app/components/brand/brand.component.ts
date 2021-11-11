@@ -3,6 +3,7 @@ import { RoutePathService } from 'src/app/services/route-path.service';
 import { MatDialog } from '@angular/material/dialog'
 import { AddBrandComponent } from 'src/app/dialogs/add-brand/add-brand.component';
 import { UpdateBrandComponent } from 'src/app/dialogs/update-brand/update-brand.component';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-brand',
@@ -19,11 +20,12 @@ export class BrandComponent implements OnInit {
     {position: 1, brandId: 'KL001', name: 'sample',category:"seller",group:"Group 1"},
     {position: 1, brandId: 'KL001', name: 'sample',category:"seller",group:"Group 1"}
   ];
-
+  searchControl:FormControl;
   constructor(
     public dialog: MatDialog,
     private routePathService:RoutePathService
   ) { 
+    this.searchControl =  new FormControl();
     this.routePathService.routePath = "Brand";
   }
 

@@ -1,7 +1,7 @@
 <div class="data-container">
     <div class="action-container one-button" fxLayout="row" fxLayoutAlign="space-between center">
         <div>
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="fill" [formControl]="searchControl">
                 <mat-label>Search By Brand</mat-label>
                 <input matInput>
             </mat-form-field>
@@ -26,9 +26,9 @@
             <th mat-header-cell *matHeaderCellDef>Brand Name </th>
             <td mat-cell *matCellDef="let element"> {{element.name}} </td>
         </ng-container>
-      
 
-       
+
+
         <ng-container matColumnDef="category">
             <th mat-header-cell *matHeaderCellDef> Category </th>
             <td mat-cell *matCellDef="let element">
@@ -45,7 +45,7 @@
         <ng-container matColumnDef="update">
             <th mat-header-cell *matHeaderCellDef> Update </th>
             <td mat-cell *matCellDef="let element">
-                <button mat-icon-button color="primary"(click)="openUpdatesacDialog()">
+                <button mat-icon-button color="primary" (click)="openUpdatesacDialog()">
                     <mat-icon>edit</mat-icon>
                 </button>
             </td>
@@ -65,9 +65,9 @@
                     <mat-icon>delete</mat-icon>
                 </button>
             </td>
-        </ng-container> 
+        </ng-container>
 
-       
+
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
